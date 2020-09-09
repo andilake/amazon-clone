@@ -1,5 +1,6 @@
 export const initialState = {
     basket: [],
+    subtotal:0,
 };
 
 const reducer = (state, action) => {
@@ -9,6 +10,7 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 basket: [...state.basket, action.item],
+                subtotal: state.subtotal + action.item.price,
             };
     
         default:

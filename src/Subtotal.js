@@ -4,7 +4,8 @@ import CurrencyFormat from "react-currency-format";
 import { useStateValue } from './StateProvider';
 
 function Subtotal() {
-    const [{basket}, dispatch] = useStateValue();
+    const [{basket,subtotal}, dispatch] = useStateValue();
+
     return (
         <div className="subtotal">
             <CurrencyFormat renderText={(value) => (
@@ -16,7 +17,7 @@ function Subtotal() {
                     </>
                 )}
                 decimalScale={2}
-                value={0} //tarea
+                value={subtotal} //tarea
                 displayType={"text"}
                 thousandSeparator={true}
                 prefix={"$"}
