@@ -6,6 +6,8 @@ import { useStateValue } from './StateProvider';
 import CurrencyFormat from 'react-currency-format';
 import { getBasketTotal } from './reducer';
 
+
+
 function Checkout() {
     const[{ basket, user }, dispatch] =useStateValue();
 
@@ -34,7 +36,7 @@ function Checkout() {
                 
                 <CurrencyFormat renderText={(value) => (
                     <>
-                        <p className="checkout__subtotal">{basket?.length==0 ? "Your shopping cart is empty" : 'Subtotal (' + basket?.length + ' items): ' + value}</p>
+                        <p className="checkout__subtotal">{basket?.length===0 ? "Your shopping cart is empty" : 'Subtotal (' + basket?.length + ' items): ' + value}</p>
                     </>
                     )}
                     decimalScale={2}

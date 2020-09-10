@@ -22,7 +22,9 @@
 }
 
 .checkoutProduct__info > button {
-    background: #f0c14b;
+    background: linear-gradient(0deg, rgba(241,196,83,1) 35%, rgba(247,221,158,1) 100%);
+    border-radius: 4px;
+    height: 25px;
     border: 1px solid;
     margin-top: 15px;
     border-color: #a88734 #9c7e31 #846a29;
@@ -38,7 +40,6 @@
 
 .checkoutProduct__rating {
     display: flex;
-    margin-top: 10px;
 }
 
 .checkoutProduct__title {

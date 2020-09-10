@@ -32,7 +32,7 @@ function App() {
         })
       }
     })
-  }, [])
+  }, [dispatch])
 
   return (
     // BEM convention nombre app
