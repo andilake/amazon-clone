@@ -5,6 +5,12 @@
     height: max-content;
 }
 
+.checkout__subtotal {
+    text-align: right;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
 .checkout__ad {
     width: 100%;
     margin-bottom: 10px;
@@ -15,3 +21,4 @@
     padding: 10px;
     border-bottom: 1px solid lightgray;
 }
+
