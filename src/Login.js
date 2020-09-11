@@ -52,7 +52,7 @@ function Login() {
                 </form>
 
                 <p>
-                    By signing-in you agree to Amazon Clone's Conditions of Use & Sale. Please see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
+                    By signing-in you agree to <strong>AMAZON CLONE's</strong> Conditions of Use & Sale. Please see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
                 </p>
 
                 <button onClick={register} className="login__registerButton">Create your Amazon Account</button>
