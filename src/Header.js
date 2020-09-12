@@ -27,14 +27,14 @@ function Header() {
             </div>
         
             <div className="header__nav">
-                <Link to={!user ? "/login" : "/"}>
+                <Link className='header__link' to={!user ? "/login" : "/"}>
                     <div onClick={handleAuthentication} className="header__option">
                         <span className="header__optionLineOne">{user ? 'Hi ' + user?.email + '!' : 'Hello Guest'}</span>
                             <span className="header__optionLineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
                     </div>
                 </Link>
             
-                <Link to={user ? "/orders" : "/login"}>
+                <Link className='header__link' to={user ? "/orders" : "/login"}>
                     <div className="header__option">
                         <span className="header__optionLineOne">Returns</span>
                         <span className="header__optionLineTwo">&Orders</span>
@@ -46,7 +46,7 @@ function Header() {
                     <span className="header__optionLineTwo">Prime</span>
                 </div>
 
-                <Link to="/checkout">
+                <Link className='header__link' to="/checkout">
                     <div className="header__optionBasket">
                         <ShoppingBasketIcon />
                         <span className="header__optionLineTwo header__basketCount">{basket?.length}</span>
